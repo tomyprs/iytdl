@@ -41,3 +41,5 @@ class Aria2c(ExternalDownloader):
     allow_overwrite: str = "true"
     show_console_readout: str = "false"
     summary_interval: int = 0
+    download_result: str = "hide"
+    quiet: str = "true"
