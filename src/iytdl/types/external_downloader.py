@@ -30,6 +30,14 @@ class Aria2c(ExternalDownloader):
 
     executable_path: str = "aria2c"
     max_concurrent_downloads: int = 5
-    max_connection_per_server: int = 1
+    max_connection_per_server: int = 10
     split: int = 5
     min_split_size: str = "20M"
+    enable_rpc: str = "true"
+    rpc_listen_all: str = "false"
+    rpc_max_request_size: str = "1024M"
+   # bt_save_metadata: str = "true"
+    daemon: str = "true" 
+    allow_overwrite: str = "true"
+    show_console_readout: str = "false"
+    summary_interval: int = 0
